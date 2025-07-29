@@ -6,18 +6,18 @@ const content = [
 				name: 'What is this?',
 				short: 'About',
 				type: 'Walkthrough',
-				icon: 'what-this.svg',
+				icon: '/what-this.svg',
 				action: {
 					type: 'page',
 					text: 'Open Walkthrough',
 					key: 'enter',
-					value: 'about'
+					value: '/guide/about'
 				}
 			},
 			{
 				name: 'Request a Windows invite',
 				type: 'Quicklink',
-				icon: 'invite.svg',
+				icon: '/invite.svg',
 				action: {
 					type: 'link',
 					text: 'Open in New Tab',
@@ -34,24 +34,24 @@ const content = [
 				name: 'Build a Raycast extension on MacOS',
 				short: 'Guide (MacOS)',
 				type: 'Guide',
-				icon: 'mac.svg',
+				icon: '/mac.svg',
 				action: {
 					type: 'page',
 					text: 'Open Guide',
 					key: 'enter',
-					value: 'guide-mac'
+					value: '/guide/mac'
 				}
 			},
 			{
 				name: 'Build a Raycast extension on Windows',
 				short: 'Guide (Windows)',
 				type: 'Guide',
-				icon: 'windows.svg',
+				icon: '/windows.svg',
 				action: {
 					type: 'page',
 					text: 'Open Guide',
 					key: 'enter',
-					value: 'guide-windows'
+					value: '/guide/windows'
 				}
 			}
 		]
@@ -62,7 +62,7 @@ const content = [
 			{
 				name: 'Raycast documentation',
 				type: 'Quicklink',
-				icon: 'docs.svg',
+				icon: '/docs.svg',
 				action: {
 					type: 'link',
 					text: 'Open in New Tab',
@@ -73,7 +73,7 @@ const content = [
 			{
 				name: 'Slack Channel',
 				type: 'Quicklink',
-				icon: 'slack.svg',
+				icon: '/slack.svg',
 				action: {
 					type: 'link',
 					text: 'Open Slack',
@@ -95,7 +95,7 @@ export function getContent(mainPage: boolean) {
 					{
 						name: 'Back to Home',
 						type: 'Quicklink',
-						icon: 'home.svg',
+						icon: '/home.svg',
 						action: {
 							type: 'page',
 							text: 'Back to Home',

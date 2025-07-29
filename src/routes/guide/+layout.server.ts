@@ -1,6 +1,6 @@
-import type { PageServerLoad } from './$types';
+import type { LayoutServerLoad } from './$types';
 
-export const load: PageServerLoad = (event) => {
+export const load: LayoutServerLoad = (event) => {
 	const userAgent = event.request.headers.get('user-agent') || '';
 	const isBot =
 		userAgent.includes('bot') || userAgent.includes('crawl') || userAgent.includes('spider');
