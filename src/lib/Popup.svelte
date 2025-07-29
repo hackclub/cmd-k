@@ -207,7 +207,7 @@
 			</div>
 		{/if}
 	</div>
-	<div class="flex h-10 items-center bg-neutral-700/50 px-2 text-xs">
+	<div class="flex h-full max-h-10 items-center bg-neutral-700/50 px-2 text-xs">
 		<a href="https://raycast.com" target="_blank" aria-label="Raycast website">
 			<svg inline-src="rc-dark" class="size-6 rounded-md p-0.25 text-white/30 hover:bg-white/10"
 			></svg>
@@ -216,7 +216,7 @@
 		<div class="flex items-center space-x-2 px-1">
 			<p class="">{bbAction}</p>
 			{#if bbActionKey === 'enter'}
-				<div class="rounded-md bg-white/10 p-1 px-1.5"><p class="translate-y-0.25">↵</p></div>
+				<div class="rounded-md bg-white/10 p-0.5 px-1.5"><p class="translate-y-0.25">↵</p></div>
 			{/if}
 		</div>
 	</div>
