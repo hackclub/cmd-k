@@ -5,3 +5,7 @@
 	--color-rc-dark-1: #151515;
 	--color-rc-dark-2: #202123;
 }
+
+body {
+	@apply bg-rc-dark-1;
+}

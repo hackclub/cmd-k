@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { blur } from 'svelte/transition';
 	import type { PageProps } from './$types';
+	import Popup from '$lib/Popup.svelte';
 
 	const { data }: PageProps = $props();
 	const isMac = data.isMac;
@@ -52,10 +53,6 @@
 
 <svelte:window on:keydown={handleKeyDown} on:keyup={handleKeyUp} />
 
-<svelte:head>
-	<title>{isMac ? 'cmd + k' : 'ctrl + k'}</title>
-</svelte:head>
-
 <div class="flex h-screen items-center justify-center bg-rc-dark-1 text-neutral-200">
 	{#if !activated}
 		<div class="flex items-center text-2xl" transition:blur={{ duration: 300 }}>
@@ -77,18 +74,30 @@
 			</div>
 		</div>
 	{:else}
-		<div class="absolute inset-0 bg-rc-primary/10" transition:blur={{ duration: 600 }}>
+		<div
+			class="pointer-events-none absolute inset-0 overflow-hidden bg-rc-primary/5"
+			transition:blur={{ duration: 600 }}
+		>
 			<div class="relative h-full w-full blur-[128px]">
 				<div class="orb-2-translate absolute top-1/2 left-1/2 -translate-1/2">
-					<div class="orb-2-scale size-[min(50vh,50vw)] rounded-full bg-orange-400/50"></div>
+					<div class="orb-2-scale size-[min(50vh,50vw)] rounded-full bg-orange-400/30"></div>
 				</div>
 				<div class="orb-1-translate absolute top-1/2 left-1/2 -translate-1/2">
-					<div class="orb-1-scale size-[min(60vh,60vw)] rounded-full bg-rc-primary/50"></div>
+					<div class="orb-1-scale size-[min(60vh,60vw)] rounded-full bg-rc-primary/30"></div>
 				</div>
 				<div class="orb-3-translate absolute top-1/2 left-1/2 -translate-1/2">
-					<div class="orb-3-scale size-[min(40vh,40vw)] rounded-full bg-red-500/50"></div>
+					<div class="orb-3-scale size-[min(40vh,40vw)] rounded-full bg-red-500/30"></div>
 				</div>
 			</div>
+		</div>
+		<div
+			transition:blur={{ delay: 100, duration: 500 }}
+			class="absolute inset-0 z-10 flex h-full w-full items-center justify-center"
+		>
+			<Popup {isMac} mainPage={true} />
+			<p class="absolute bottom-4 text-xs text-white/20">
+				cmd + k is not affiliated or endorced by Raycast
+			</p>
 		</div>
 	{/if}
 </div>
@@ -134,7 +143,7 @@
 			transform: translateX(-40%) translateY(60%);
 		}
 		100% {
-			transform: translateX(-20%) translateY(-40%);
+			transform: translateX(-50%) translateY(-40%);
 		}
 	}
 
