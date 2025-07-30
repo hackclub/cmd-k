@@ -11,3 +11,78 @@
 <p class="subtitle">(MacOS edition)</p>
 <Divider />
 
+Extensions allow you to add extra features to Raycast. Let's build your first Raycast extension to check the weather!
+
+A lot of this guide is derived from the official <a href="https://developers.raycast.com" target="_blank">Raycast Developer Documentation</a>, so be sure to check that out!
+
+## Setup
+<Divider />
+
+Before you can start building extensions, you need to have the following installed:
+- Raycast 1.26.0 or higher
+- <a href="https://nodejs.org" target="_blank">Node.js</a> 22.14 or higher. (<a href="https://github.com/nvm-sh/nvm" target="_blank">nvm</a> is a helpful tool to switch between versions)
+- <a href="https://npmjs.com" target="_blank">npm</a> 7 or higher (should come installed with Node.js)
+
+And set up time tracking with Hackatime in your favorite editor!
+<div class="py-4 w-full flex justify-center">
+	<a href="https://hackatime.hackclub.com" target="_blank" class="bg-rc-primary px-4 py-2 rounded-md text-rc-dark-1 text-lg">Go to Hackatime</a>
+</div>
+
+## Sign in
+<Divider />
+
+You need to be signed in to access the developer features.
+
+Simply run the store command:
+![Sign in](https://developers.raycast.com/~gitbook/image?url=https%3A%2F%2F2922539984-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-Me_8A39tFhZg3UaVoSN%252Fuploads%252Fgit-blob-829557d913eae5961c97c1493babd3e6371a30f1%252Fwelcome.webp%3Falt%3Dmedia&width=768&dpr=2&quality=100&sign=4ec9b461&sv=2)
+
+## Extension setup
+
+Raycast has a few built in tools that make it super easy to make an extension.
+
+Run the "Create Extension" command to get started. In the popup that shows, enter some details about your extension. I'm creating an extension to check the weather, so I'll do that. I'll use the "Show Detail" template:
+
+![create an extension, pt. 1](/guide/mac/create-1.png)
+![create an extension, pt. 1](/guide/mac/create-2.png)
+
+No worries if it isn't perfect, You can edit these in `package.json` after.
+
+<br />
+
+We can now open the folder that Raycast just created (it'll be called your project name). Since I named my command "weather", Raycast made a `src/weather.tsx`.
+
+Here's what's in our file:
+
+```js
+import { Detail } from "@raycast/api";
+
+export default function Command() {
+  return <Detail markdown="# Hello World" />;
+}
+```
+
+If you've used React before, this might look familiar, because it is React. Essentially, Raycast extensions use pre-made React components. You can still make a Raycast extension if you've never used React, though!
+
+<br />
+
+We still need to run a few terminal commands before we can run our extension.
+
+First, in the terminal install the required packages
+```bash
+npm install
+```
+And actually run it
+```bash
+npm run dev
+```
+Your extension will automatically reload and update as you change your code!
+
+You can actually stop this script with `control + c`, and the extension will still be available on Raycast.
+
+<br />
+
+Let's go back to Raycast, if you search up run your command, it should appear and say "Hello World"!
+
+![your command in Raycast](/guide/mac/command.png)
+![your command running](/guide/mac/hello-world.png)
+The green drive icon means that `npm run dev` is active.

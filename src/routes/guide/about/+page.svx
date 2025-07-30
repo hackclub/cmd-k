@@ -13,7 +13,7 @@
 
 cmd + k is a limited time You Ship, We Ship program! (available for both MacOS and Windows users)
 
-![image](/guide/cmd-k.png)
+![intro to cmd +k](/guide/cmd-k.png)
 
 You'll spend 3+ hours building an extension for Raycast (tracked with <a href="https://hackatime.hackclub.com" target="_blank">Hackatime</a>), and we'll get you <a href="https://www.raycast.com/pro" target="_blank">Raycast Pro</a> and Hack Club Raycast stickers :D
 
@@ -71,6 +71,7 @@ Once you've finished building and polished up your extension, make sure you've m
 - 3+ hours of coding tracked on Hackatime
 - Source code is public on GitHub
 - You have a README with a description, demo video (screen recording), and installation instructions
+- You're a teenager 18 or younger
 
 Fill out the form to submit!
 
