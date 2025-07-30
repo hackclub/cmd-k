@@ -13,7 +13,7 @@
 <div
 	class="fixed top-0 right-0 left-0 flex h-18 justify-center border-b border-neutral-700 px-8 text-neutral-300 backdrop-blur-3xl"
 >
-	<div class="flex h-full max-w-7xl grow items-center">
+	<div class="flex h-full grow items-center">
 		<a
 			href="/"
 			class="group flex items-center space-x-2 text-xl hover:scale-110 motion-safe:transition-transform"
@@ -38,14 +38,52 @@
 	</div>
 </div>
 
-<div class="h-18"></div>
+<div class="fixed flex h-full min-h-screen w-72 flex-col">
+	<div class="h-18"></div>
+	<div class="flex h-full flex-col px-2 py-4 text-neutral-300">
+		<a href="/" class="w-full rounded-md px-4 py-2 hover:bg-neutral-800"> Back to the main page </a>
+		<p class="mx-4 pt-4 text-xs font-medium text-neutral-500">Guides</p>
+		<a href="/guide/about" class="w-full rounded-md px-4 py-2 hover:bg-neutral-800">
+			Welcome to cmd + k
+		</a>
+		<a href="/guide/mac" class="w-full rounded-md px-4 py-2 hover:bg-neutral-800">MacOS guide</a>
+		<a href="/guide/windows" class="w-full rounded-md px-4 py-2 hover:bg-neutral-800"
+			>Windows guide</a
+		>
+		<p class="mx-4 pt-4 text-xs font-medium text-neutral-500">Other resources</p>
+		<a
+			href="https://developers.raycast.com"
+			target="_blank"
+			class="w-full rounded-md px-4 py-2 hover:bg-neutral-800">Official documentation</a
+		>
+		<a
+			href="https://google.com"
+			target="_blank"
+			class="w-full rounded-md px-4 py-2 hover:bg-neutral-800">Request Windows invite</a
+		>
+		<a
+			href="https://hackclub.slack.com/archives/C0981BXG124"
+			target="_blank"
+			class="w-full rounded-md px-4 py-2 hover:bg-neutral-800">Join #cmd+k on Slack</a
+		>
+		<a
+			href="https://google.com"
+			target="_blank"
+			class="mt-6 w-full rounded-md bg-rc-primary px-4 py-2 text-rc-dark-1">Submit your extension</a
+		>
+		<div class="grow"></div>
+		<p class="text-center text-xs text-neutral-500">
+			Tip: you can use {isMac ? 'cmd' : 'ctrl'} + k on any page
+		</p>
+	</div>
+</div>
 
-<div class="fixed flex min-h-screen w-72 flex-col"></div>
+<div class="h-18"></div>
 
 <div class="flex">
 	<div class="w-full max-w-72"></div>
 	<div class="flex grow justify-center text-neutral-300">
-		<div class="mx-18 max-w-3xl grow pt-4" id="guide-content">
+		<div class="mx-18 max-w-3xl grow" id="guide-content">
 			{@render children()}
 			<p class="w-full pt-12 pb-4 text-center text-xs text-neutral-500">
 				Built with ♥︎ by <a href="https://hackclub.com" target="_blank" class="underline"

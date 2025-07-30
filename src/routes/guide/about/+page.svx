@@ -17,7 +17,7 @@ cmd + k is a limited time You Ship, We Ship program! (available for both MacOS a
 
 You'll spend 3+ hours building an extension for Raycast (tracked with <a href="https://hackatime.hackclub.com" target="_blank">Hackatime</a>), and we'll get you <a href="https://www.raycast.com/pro" target="_blank">Raycast Pro</a> and Hack Club Raycast stickers :D
 
-(pro tip: you can use the cmd + k shortcut on any page)
+(pro tip: you can use the cmd/ctrl + k shortcut on any page)
 
 ## What's Raycast?
 <Divider />
@@ -53,9 +53,9 @@ Before you build, make sure you have Hackatime set up so your time is tracked. F
 
 ### 1. Build your extension
 
-Come up with an idea and get building! Check our MacOS or Windows guides if you need help getting started.
+Come up with an idea and get building! Check our <a href="/guide/mac">MacOS</a> or <a href="/guide/windows">Windows</a> guides if you need help getting started.
 
-The official Raycast Developer documentation covers a ton more stuff in detail!
+The official <a href="https://developers.raycast.com" target="_blank">Raycast Developer documentation</a> covers a ton more stuff in detail!
 
 > To Windows users: Raycast on Windows is still in private beta, but we have exclusive invite codes for Hack Clubbers. Once you've gotten your idea, request a code here:
 
@@ -82,4 +82,4 @@ Fill out the form to submit!
 
 Once your submission has been approved, expect an email on how we'll get you Raycast Pro!
 
-## Start building with the MacOS or Windows guides!
+## Start building with the <a href="/guide/mac" class="underline">MacOS</a> or <a href="/guide/windows" class="underline">Windows</a> guides!

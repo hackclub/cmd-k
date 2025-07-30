@@ -1,0 +1,12 @@
+<script lang="ts">
+	import Divider from '$lib/md/Divider.svelte';
+</script>
+
+<svelte:head>
+	<title>MacOS guide | cmd + k</title>
+	<meta name="description" content="Build a Raycast extension, get Raycast Pro | Hack Club YSWS" />
+</svelte:head>
+
+<h1 class="title">Build a Raycast extension</h1>
+<p class="subtitle">(Windows edition)</p>
+<Divider />
