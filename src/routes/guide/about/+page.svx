@@ -1,0 +1,10 @@
+<svelte:head>
+	<title>Welcome to cmd + k</title>
+	<meta name="description" content="Build a Raycast extension, get Raycast Pro | Hack Club YSWS" />
+</svelte:head>
+
+<h1 class="title">Welcome to cmd + k</h1>
+<p class="subtitle">Build a Raycast extension, get Raycast Pro & stickers</p>
+<div class="border-b border-neutral-800 my-2"></div>
+
+cmd + k is a limited time You Ship, We Ship program!

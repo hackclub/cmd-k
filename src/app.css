@@ -9,3 +9,31 @@
 body {
 	@apply bg-rc-dark-1;
 }
+
+.rc-glow {
+	--tw-shadow: 0 0 10px color-mix(in oklab, var(--color-rc-primary) 70%, transparent);
+	--tw-shadow-color: color-mix(in oklab, var(--color-rc-primary) 70%, transparent);
+	box-shadow:
+		inset var(--tw-shadow),
+		var(--tw-shadow);
+	text-shadow: var(--tw-shadow);
+}
+
+.gray-glow {
+	--tw-shadow: 0 0 5px color-mix(in oklab, var(--color-gray-300) 50%, transparent);
+	--tw-shadow-color: color-mix(in oklab, var(--color-gray-300) 50%, transparent);
+	box-shadow:
+		inset var(--tw-shadow),
+		var(--tw-shadow);
+	text-shadow: var(--tw-shadow);
+}
+
+.rc-glow-text {
+	--tw-text-shadow: 0 0 10px color-mix(in oklab, var(--color-rc-primary) 70%, transparent);
+	text-shadow: var(--tw-text-shadow);
+}
+
+.gray-glow-text {
+	--tw-text-shadow: 0 0 5px color-mix(in oklab, var(--color-gray-300) 50%, transparent);
+	text-shadow: var(--tw-text-shadow);
+}

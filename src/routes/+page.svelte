@@ -92,7 +92,7 @@
 		</div>
 		<div
 			transition:blur={{ delay: 100, duration: 500 }}
-			class="absolute inset-0 z-10 flex h-full w-full items-center justify-center"
+			class="fixed inset-0 z-10 flex h-full w-full items-center justify-center"
 		>
 			<Popup {isMac} mainPage={true} />
 			<p class="absolute bottom-4 text-xs text-white/20">
@@ -103,24 +103,6 @@
 </div>
 
 <style>
-	.rc-glow {
-		--tw-shadow: 0 0 10px color-mix(in oklab, var(--color-rc-primary) 70%, transparent);
-		--tw-shadow-color: color-mix(in oklab, var(--color-rc-primary) 70%, transparent);
-		box-shadow:
-			inset var(--tw-shadow),
-			var(--tw-shadow);
-		text-shadow: var(--tw-shadow);
-	}
-
-	.gray-glow {
-		--tw-shadow: 0 0 5px color-mix(in oklab, var(--color-gray-300) 50%, transparent);
-		--tw-shadow-color: color-mix(in oklab, var(--color-gray-300) 50%, transparent);
-		box-shadow:
-			inset var(--tw-shadow),
-			var(--tw-shadow);
-		text-shadow: var(--tw-shadow);
-	}
-
 	.orb-1-translate {
 		animation: orb-1-translate 30s linear infinite;
 	}

@@ -24,6 +24,17 @@ const content = [
 					key: 'enter',
 					value: 'https://google.com'
 				}
+			},
+			{
+				name: 'Submit your extension',
+				type: 'Quicklink',
+				icon: '/submit.svg',
+				action: {
+					type: 'link',
+					text: 'Open in New Tab',
+					key: 'enter',
+					value: 'https://google.com'
+				}
 			}
 		]
 	},
@@ -60,7 +71,7 @@ const content = [
 		name: 'Other resources',
 		content: [
 			{
-				name: 'Raycast documentation',
+				name: 'Raycast developer documentation',
 				type: 'Quicklink',
 				icon: '/docs.svg',
 				action: {

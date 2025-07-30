@@ -169,12 +169,12 @@
 
 <div
 	bind:this={popupRef}
-	class={`mx-8 h-94 w-full max-w-3xl flex-col overflow-hidden rounded-xl border border-neutral-600 text-neutral-300 shadow-2xl shadow-black backdrop-blur-3xl ${mainPage || shown ? 'flex' : 'hidden'} ${mainPage ? 'bg-rc-dark-1/70' : 'bg-rc-dark-2/80'}`}
+	class={`pointer-events-auto z-10 mx-8 h-94 w-full max-w-3xl flex-col overflow-hidden rounded-xl border border-neutral-600 text-neutral-300 shadow-2xl shadow-black backdrop-blur-3xl ${mainPage || shown ? 'flex' : 'hidden'} ${mainPage ? 'bg-rc-dark-1/70' : 'bg-rc-dark-2/80'}`}
 >
 	<div class="flex border-b border-neutral-600/50 p-1.5 text-lg text-neutral-300">
 		<input
 			type="text"
-			placeholder="Search and navigate using arrow keys..."
+			placeholder="Search and navigate using arrow keys & enter..."
 			class="grow p-2 placeholder-white/30 outline-none"
 			bind:this={textInput}
 			bind:value={query}
