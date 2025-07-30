@@ -53,7 +53,7 @@
 
 <svelte:window on:keydown={handleKeyDown} on:keyup={handleKeyUp} />
 
-<div class="hidden h-screen items-center justify-center bg-rc-dark-1 text-neutral-200 md:flex">
+<div class="hidden h-screen items-center justify-center bg-rc-dark-1 text-neutral-200 lg:flex">
 	{#if !activated}
 		<div class="flex items-center text-2xl" transition:blur={{ duration: 300 }}>
 			<div
@@ -103,7 +103,7 @@
 </div>
 
 <div
-	class="gray-glow-text mx-4 flex min-h-screen flex-col items-center justify-center text-center text-neutral-300 md:hidden"
+	class="gray-glow-text mx-4 flex min-h-screen flex-col items-center justify-center text-center text-neutral-300 lg:hidden"
 >
 	<p class="text-3xl font-medium">Welcome to cmd + k</p>
 	<p class="text-xl font-medium">This site is best viewed on desktop</p>

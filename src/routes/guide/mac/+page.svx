@@ -155,7 +155,9 @@ Finally, we use Raycast's `<Detail>` component to show stuff to the screen.
 ## Check out the Raycast examples and documentation
 <Divider />
 
-Raycast has a few awesome examples of how to implement things, you should check them out here: https://developers.raycast.com/examples/hacker-news
+Raycast has a few awesome examples of how to implement things, you should check them out here: <a href="https://developers.raycast.com/examples/hacker-news" target="_blank">https://developers.raycast.com/examples/hacker-news</a>
+
+There are so many other possibilities. Raycast provides a ton of UI elements, and because it's React, you can write your own!
 
 <br />
 <br />

@@ -21,13 +21,13 @@
 </div>
 
 <div
-	class="fixed top-0 right-0 left-0 z-10 flex h-18 justify-center border-b border-neutral-700 px-2 text-neutral-300 backdrop-blur-3xl md:px-8"
+	class="fixed top-0 right-0 left-0 z-10 flex h-18 justify-center border-b border-neutral-700 px-2 text-neutral-300 backdrop-blur-3xl lg:px-8"
 >
 	<div class="flex h-full grow items-center">
 		<!-- Hamburger menu button (mobile only) -->
 		<button
 			onclick={toggleMobileMenu}
-			class="mr-4 flex h-10 w-10 items-center justify-center rounded-md hover:bg-neutral-800 md:hidden"
+			class="mr-4 flex h-10 w-10 items-center justify-center rounded-md hover:bg-neutral-800 lg:hidden"
 			aria-label="Toggle menu"
 		>
 			<svg
@@ -71,7 +71,7 @@
 </div>
 
 <!-- Desktop Sidebar -->
-<div class="fixed hidden h-full min-h-screen w-72 flex-col md:flex">
+<div class="fixed hidden h-full min-h-screen w-72 flex-col lg:flex">
 	<div class="h-18"></div>
 	<div class="flex h-full flex-col px-2 py-4 text-neutral-300">
 		<a href="/" class="w-full rounded-md px-4 py-2 hover:bg-neutral-800"> Back to the main page </a>
@@ -113,7 +113,7 @@
 
 <!-- Mobile Menu Overlay -->
 {#if mobileMenuOpen}
-	<div class="fixed inset-0 z-40 md:hidden">
+	<div class="fixed inset-0 z-40 lg:hidden">
 		<!-- Backdrop -->
 		<button
 			type="button"
@@ -195,9 +195,9 @@
 <div class="h-18"></div>
 
 <div class="flex">
-	<div class="hidden w-full max-w-72 md:block"></div>
+	<div class="hidden w-full max-w-72 lg:block"></div>
 	<div class="flex grow justify-center text-neutral-300">
-		<div class="mx-4 max-w-3xl grow md:mx-18" id="guide-content">
+		<div class="mx-4 max-w-3xl grow lg:mx-18" id="guide-content">
 			{@render children()}
 			<p class="w-full pt-12 pb-4 text-center text-xs text-neutral-500">
 				Built with ♥︎ by <a href="https://hackclub.com" target="_blank" class="underline"
@@ -237,6 +237,10 @@
 	}
 
 	#guide-content :global(p > a) {
+		@apply underline;
+	}
+
+	#guide-content :global(li > a) {
 		@apply underline;
 	}
 
