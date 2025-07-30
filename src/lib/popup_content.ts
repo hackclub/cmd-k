@@ -22,7 +22,7 @@ const content = [
 					type: 'link',
 					text: 'Open in New Tab',
 					key: 'enter',
-					value: 'https://google.com'
+					value: 'https://submit.hackclub.com/cmdkreq'
 				}
 			},
 			{
@@ -33,7 +33,7 @@ const content = [
 					type: 'link',
 					text: 'Open in New Tab',
 					key: 'enter',
-					value: 'https://google.com'
+					value: 'https://submit.hackclub.com/cmdk'
 				}
 			}
 		]

@@ -101,7 +101,7 @@
 			class="w-full rounded-md px-4 py-2 hover:bg-neutral-800">Official documentation</a
 		>
 		<a
-			href="https://google.com"
+			href="https://submit.hackclub.com/cmdkreq"
 			target="_blank"
 			class="w-full rounded-md px-4 py-2 hover:bg-neutral-800">Request Windows invite</a
 		>
@@ -111,7 +111,7 @@
 			class="w-full rounded-md px-4 py-2 hover:bg-neutral-800">Join #cmd+k on Slack</a
 		>
 		<a
-			href="https://google.com"
+			href="https://submit.hackclub.com/cmdk"
 			target="_blank"
 			class="mt-6 w-full rounded-md bg-rc-primary px-4 py-2 text-rc-dark-1">Submit your extension</a
 		>
@@ -177,7 +177,7 @@
 					Official documentation
 				</a>
 				<a
-					href="https://google.com"
+					href="https://submit.hackclub.com/cmdkreq"
 					target="_blank"
 					class="w-full rounded-md px-4 py-2 hover:bg-neutral-800"
 				>
@@ -191,7 +191,7 @@
 					Join #cmd+k on Slack
 				</a>
 				<a
-					href="https://google.com"
+					href="https://submit.hackclub.com/cmdk"
 					target="_blank"
 					class="mt-6 w-full rounded-md bg-rc-primary px-4 py-2 text-rc-dark-1"
 				>

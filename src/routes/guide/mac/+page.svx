@@ -164,4 +164,4 @@ There are so many other possibilities. Raycast provides a ton of UI elements, an
 
 <Divider />
 
-### Once you're done, <a href="https://google.com" target="_blank" class="underline">submit your extension</a>!
+### Once you're done, <a href="https://submit.hackclub.com/cmdk" target="_blank" class="underline">submit your extension</a>!

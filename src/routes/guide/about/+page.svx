@@ -73,7 +73,7 @@ The official <a href="https://developers.raycast.com" target="_blank">Raycast De
 > To Windows users: Raycast on Windows is still in private beta, but we have exclusive invite codes for Hack Clubbers. Once you've gotten your idea, request a code here:
 
 <div class="py-4 w-full flex justify-center">
-	<a target="_blank" class="bg-rc-primary px-4 py-2 rounded-md text-rc-dark-1 text-lg">Request a Windows invite</a>
+	<a href="https://submit.hackclub.com/cmdkreq" target="_blank" class="bg-rc-primary px-4 py-2 rounded-md text-rc-dark-1 text-lg">Request a Windows invite</a>
 </div>
 
 You need have at least 3 hours of tracked time spent on your project. Add another feature, polish up what you already have!
@@ -89,7 +89,7 @@ Once you've finished building and polished up your extension, make sure you've m
 Fill out the form to submit!
 
 <div class="py-4 w-full flex justify-center">
-	<a target="_blank" class="bg-rc-primary px-4 py-2 rounded-md text-rc-dark-1 text-lg rc-glow">Submit your extension</a>
+	<a href="https://submit.hackclub.com/cmdk" target="_blank" class="bg-rc-primary px-4 py-2 rounded-md text-rc-dark-1 text-lg rc-glow">Submit your extension</a>
 </div>
 
 ### 3. Get the goodies
