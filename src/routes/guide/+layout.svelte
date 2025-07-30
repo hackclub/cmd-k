@@ -14,6 +14,17 @@
 	function closeMobileMenu() {
 		mobileMenuOpen = false;
 	}
+
+	const deadline = new Date('2025-08-17T23:59:00-04:00'); // EDT
+	let localDeadline = $derived.by(() => {
+		return deadline.toLocaleString(undefined, {
+			month: 'long',
+			day: 'numeric',
+			hour: 'numeric',
+			minute: 'numeric',
+			timeZoneName: 'short'
+		});
+	});
 </script>
 
 <div class="pointer-events-none fixed inset-0 z-50 flex h-full w-full items-center justify-center">
@@ -105,6 +116,7 @@
 			class="mt-6 w-full rounded-md bg-rc-primary px-4 py-2 text-rc-dark-1">Submit your extension</a
 		>
 		<div class="grow"></div>
+		<p class="pb-2 text-center text-sm font-medium">cmd + k ends on<br />{localDeadline}</p>
 		<p class="text-center text-xs text-neutral-500">
 			Tip: you can use {isMac ? 'cmd' : 'ctrl'} + k on any page
 		</p>

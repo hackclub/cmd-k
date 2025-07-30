@@ -1,5 +1,16 @@
 <script lang="ts">
 	import Divider from '$lib/md/Divider.svelte';
+
+	const deadline = new Date('2025-08-17T23:59:00-04:00'); // EDT
+	let localDeadline = $derived.by(() => {
+		return deadline.toLocaleString(undefined, {
+			month: "long",
+			day: "numeric",
+			hour: "numeric",
+			minute: "numeric",
+			timeZoneName: 'short'
+		})
+	})
 </script>
 
 <svelte:head>
@@ -12,6 +23,8 @@
 <Divider />
 
 cmd + k is a limited time You Ship, We Ship program! (available for both MacOS and Windows users)
+
+<p class="text-center font-bold py-2">cmd + k ends <span title="August 17, 11:59pm EDT">{localDeadline}</span></p>
 
 ![intro to cmd +k](/guide/cmd-k.png)
 
