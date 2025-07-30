@@ -1,3 +1,7 @@
+<script lang="ts">
+	import Divider from '$lib/md/Divider.svelte';
+</script>
+
 <svelte:head>
 	<title>Welcome to cmd + k</title>
 	<meta name="description" content="Build a Raycast extension, get Raycast Pro | Hack Club YSWS" />
@@ -5,6 +9,77 @@
 
 <h1 class="title">Welcome to cmd + k</h1>
 <p class="subtitle">Build a Raycast extension, get Raycast Pro & stickers</p>
-<div class="border-b border-neutral-800 my-2"></div>
+<Divider />
 
-cmd + k is a limited time You Ship, We Ship program!
+cmd + k is a limited time You Ship, We Ship program! (available for both MacOS and Windows users)
+
+![image](/guide/cmd-k.png)
+
+You'll spend 3+ hours building an extension for Raycast (tracked with <a href="https://hackatime.hackclub.com" target="_blank">Hackatime</a>), and we'll get you <a href="https://www.raycast.com/pro" target="_blank">Raycast Pro</a> and Hack Club Raycast stickers :D
+
+(pro tip: you can use the cmd + k shortcut on any page)
+
+## What's Raycast?
+<Divider />
+
+If you've ever used MacOS Spotlight or Windows Start, imagine that, but much more powerful! At it's core,
+Raycast allows you to launch apps by searching up their name, but you can extend what it can do with extensions.
+
+You can:
+- check your email with Raycast
+- open GitHub issues
+- control your playlist
+- set your window layouts
+- anything you can code
+
+Here's an demo from Raycast of what it can do:
+
+<video src="/guide/rc-intro.mp4" controls class="w-full rounded-md my-4" autoplay loop>
+	Sorry, your browser doesn't support embedded videos.
+</video>
+
+Check out the <a href="https://www.raycast.com" target="_blank">Raycast site</a> for more about this awesome tool!
+
+## Here's how this works
+<Divider />
+
+### 1. Setup Hackatime
+
+Before you build, make sure you have Hackatime set up so your time is tracked. Follow the instructions on the hackatime website!
+
+<div class="py-4 w-full flex justify-center">
+	<a target="_blank" class="bg-rc-primary px-4 py-2 rounded-md text-rc-dark-1 text-lg" href="https://hackatime.hackclub.com">Go to Hackatime</a>
+</div>
+
+### 1. Build your extension
+
+Come up with an idea and get building! Check our MacOS or Windows guides if you need help getting started.
+
+The official Raycast Developer documentation covers a ton more stuff in detail!
+
+> To Windows users: Raycast on Windows is still in private beta, but we have exclusive invite codes for Hack Clubbers. Once you've gotten your idea, request a code here:
+
+<div class="py-4 w-full flex justify-center">
+	<a target="_blank" class="bg-rc-primary px-4 py-2 rounded-md text-rc-dark-1 text-lg">Request a Windows invite</a>
+</div>
+
+You need have at least 3 hours of tracked time spent on your project. Add another feature, polish up what you already have!
+
+### 2. Ship it!
+
+Once you've finished building and polished up your extension, make sure you've met the submission requirements:
+- 3+ hours of coding tracked on Hackatime
+- Source code is public on GitHub
+- You have a README with a description, demo video (screen recording), and installation instructions
+
+Fill out the form to submit!
+
+<div class="py-4 w-full flex justify-center">
+	<a target="_blank" class="bg-rc-primary px-4 py-2 rounded-md text-rc-dark-1 text-lg rc-glow">Submit your extension</a>
+</div>
+
+### 3. Get the goodies
+
+Once your submission has been approved, expect an email on how we'll get you Raycast Pro!
+
+## Start building with the MacOS or Windows guides!

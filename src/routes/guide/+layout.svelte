@@ -43,13 +43,19 @@
 <div class="fixed flex min-h-screen w-72 flex-col"></div>
 
 <div class="flex">
-	<div class="w-72"></div>
-	<div class="flex grow justify-center py-10 text-neutral-300">
-		<div class="mx-18 max-w-6xl grow" id="guide-content">
+	<div class="w-full max-w-72"></div>
+	<div class="flex grow justify-center text-neutral-300">
+		<div class="mx-18 max-w-3xl grow pt-4" id="guide-content">
 			{@render children()}
+			<p class="w-full pt-12 pb-4 text-center text-xs text-neutral-500">
+				Built with ♥︎ by <a href="https://hackclub.com" target="_blank" class="underline"
+					>Hack Club</a
+				>. cmd + k is not affiliated or endorced by Raycast
+			</p>
 		</div>
 	</div>
 </div>
+<div class="w-full text-center text-neutral-700"></div>
 
 <style lang="postcss">
 	@reference "../../app.css";
@@ -63,10 +69,26 @@
 	}
 
 	#guide-content :global(h1) {
-		@apply mt-4 text-4xl font-medium;
+		@apply mt-12 text-4xl font-medium;
+	}
+
+	#guide-content :global(h2) {
+		@apply mt-10 text-3xl font-medium;
+	}
+
+	#guide-content :global(h3) {
+		@apply mt-6 text-2xl font-medium;
 	}
 
 	#guide-content :global(p) {
-		@apply mt-4;
+		@apply mt-2;
+	}
+
+	#guide-content :global(p > a) {
+		@apply underline;
+	}
+
+	#guide-content :global(ul) {
+		@apply mt-2 list-disc pl-6;
 	}
 </style>

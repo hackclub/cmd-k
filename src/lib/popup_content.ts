@@ -82,7 +82,7 @@ const content = [
 				}
 			},
 			{
-				name: 'Slack Channel',
+				name: 'Slack channel',
 				type: 'Quicklink',
 				icon: '/slack.svg',
 				action: {
