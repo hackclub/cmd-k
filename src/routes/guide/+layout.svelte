@@ -246,10 +246,16 @@
 
 	#guide-content :global(pre.shiki) {
 		@apply my-2 rounded-md p-4;
+		white-space: pre-wrap;
+		word-wrap: break-word;
+		overflow-wrap: break-word;
+		overflow-x: auto;
 	}
 
 	#guide-content :global(p code) {
 		@apply rounded-sm bg-rc-dark-2 px-2 text-neutral-300;
+		word-wrap: break-word;
+		overflow-wrap: break-word;
 	}
 
 	#guide-content :global(img) {

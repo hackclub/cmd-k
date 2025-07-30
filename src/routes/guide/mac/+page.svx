@@ -86,3 +86,80 @@ Let's go back to Raycast, if you search up run your command, it should appear an
 ![your command in Raycast](/guide/mac/command.png)
 ![your command running](/guide/mac/hello-world.png)
 The green drive icon means that `npm run dev` is active.
+
+## Write the code
+
+If you've used React before, you can probably skip this step.
+
+Here's some basic code to fetch the weather in Berlin.
+
+```js
+import { Detail } from "@raycast/api"; 
+import { useEffect, useState } from "react";
+
+type WeatherData = {
+  temperature: string;
+  wind: string;
+  description: string;
+};
+
+export default function Command() {
+  const [weather, setWeather] = useState<WeatherData | null>(null);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    fetch("https://goweather.xyz/weather/berlin")
+      .then((res) => {
+        if (!res.ok) throw new Error("Network response was not ok");
+        return res.json();
+      })
+      .then((data) => {
+        const weatherData = data as { temperature: string; wind: string; description: string };
+        setWeather({
+          temperature: weatherData.temperature,
+          wind: weatherData.wind,
+          description: weatherData.description,
+        });
+      })
+      .catch((e) => setError(e.message));
+  }, []);
+
+  if (error) {
+    return <Detail markdown={`# Error\n${error}`} />;
+  }
+
+  if (!weather) {
+    return <Detail markdown="Loading weather..." />;
+  }
+
+  return (
+    <Detail
+      markdown={`# Berlin Weather\n\n**${weather.description}**\n\n- Temperature: ${weather.temperature}\n- Wind: ${weather.wind}`}
+    />
+  );
+}
+```
+
+We're using Typescript, so we first define what type of data we expect from `goweather.xyz`.
+
+`useState` allows us to save values that allow other elements to respond to it's changes. Notice how we put `{weather.description}` or `if (weather)` but never explicitly write code to update it after we get the weather data? React handles that for us because `weather` is a state.
+
+`useEffect` is used to run code as a result of another action. In our case, we want our code to run when our command is loaded. Notice at the end, we put `}, []);`. The empty array tells React to run it on load.
+
+The rest is pretty standard JavaScript, we're just using `fetch` to get data from an API.
+
+Finally, we use Raycast's `<Detail>` component to show stuff to the screen.
+
+![the weather extension showing up in Raycast](/guide/mac/weather.png)
+
+## Check out the Raycast examples and documentation
+<Divider />
+
+Raycast has a few awesome examples of how to implement things, you should check them out here: https://developers.raycast.com/examples/hacker-news
+
+<br />
+<br />
+
+<Divider />
+
+### Once you're done, <a href="https://google.com" target="_blank" class="underline">submit your extension</a>!
