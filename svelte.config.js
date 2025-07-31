@@ -5,7 +5,7 @@ import { createHighlighter } from 'shiki';
 
 const shikiHighlighter = await createHighlighter({
 	themes: ["material-theme-darker"],
-	langs: ["javascript", "bash"],
+	langs: ["javascript", "bash", "json"],
 })
 
 /** @type {import('@sveltejs/kit').Config} */

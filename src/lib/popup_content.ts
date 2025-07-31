@@ -42,8 +42,8 @@ const content = [
 		name: 'Raycast extension guides',
 		content: [
 			{
-				name: 'Build a Raycast extension on MacOS',
-				short: 'Guide (MacOS)',
+				name: 'Build a Raycast extension on macOS',
+				short: 'Guide (macOS)',
 				type: 'Guide',
 				icon: '/mac.svg',
 				action: {

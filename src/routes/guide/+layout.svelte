@@ -90,7 +90,7 @@
 		<a href="/guide/about" class="w-full rounded-md px-4 py-2 hover:bg-neutral-800">
 			Welcome to cmd + k
 		</a>
-		<a href="/guide/mac" class="w-full rounded-md px-4 py-2 hover:bg-neutral-800">MacOS guide</a>
+		<a href="/guide/mac" class="w-full rounded-md px-4 py-2 hover:bg-neutral-800">macOS guide</a>
 		<a href="/guide/windows" class="w-full rounded-md px-4 py-2 hover:bg-neutral-800"
 			>Windows guide</a
 		>
@@ -159,7 +159,7 @@
 					class="w-full rounded-md px-4 py-2 hover:bg-neutral-800"
 					onclick={closeMobileMenu}
 				>
-					MacOS guide
+					macOS guide
 				</a>
 				<a
 					href="/guide/windows"
@@ -214,7 +214,7 @@
 			<p class="w-full pt-12 pb-4 text-center text-xs text-neutral-500">
 				Built with ♥︎ by <a href="https://hackclub.com" target="_blank" class="underline"
 					>Hack Club</a
-				>. cmd + k is not affiliated or endorced by Raycast
+				>. cmd + k is not affiliated or endorsed by Raycast
 			</p>
 		</div>
 	</div>
@@ -275,6 +275,6 @@
 	}
 
 	#guide-content :global(img) {
-		@apply my-2 rounded-md;
+		@apply mx-auto my-2 rounded-md;
 	}
 </style>

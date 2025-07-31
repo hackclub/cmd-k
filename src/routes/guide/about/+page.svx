@@ -22,7 +22,7 @@
 <p class="subtitle">Build a Raycast extension, get Raycast Pro & stickers</p>
 <Divider />
 
-cmd + k is a limited time You Ship, We Ship program! (available for both MacOS and Windows users)
+cmd + k is a limited time You Ship, We Ship program! (available for both macOS and Windows users)
 
 <p class="text-center font-bold py-2">cmd + k ends <span title="August 17, 11:59pm EDT">{localDeadline}</span></p>
 
@@ -35,7 +35,7 @@ You'll spend 3+ hours building an extension for Raycast (tracked with <a href="h
 ## What's Raycast?
 <Divider />
 
-If you've ever used MacOS Spotlight or Windows Start, imagine that, but much more powerful! At it's core,
+If you've ever used macOS Spotlight or Windows Start, imagine that, but much more powerful! At it's core,
 Raycast allows you to launch apps by searching up their name, but you can extend what it can do with extensions.
 
 You can:
@@ -66,7 +66,7 @@ Before you build, make sure you have Hackatime set up so your time is tracked. F
 
 ### 1. Build your extension
 
-Come up with an idea and get building! Check our <a href="/guide/mac">MacOS</a> or <a href="/guide/windows">Windows</a> guides if you need help getting started.
+Come up with an idea and get building! Check our <a href="/guide/mac">macOS</a> or <a href="/guide/windows">Windows</a> guides if you need help getting started.
 
 The official <a href="https://developers.raycast.com" target="_blank">Raycast Developer documentation</a> covers a ton more stuff in detail!
 
@@ -96,4 +96,4 @@ Fill out the form to submit!
 
 Once your submission has been approved, expect an email on how we'll get you Raycast Pro!
 
-## Start building with the <a href="/guide/mac" class="underline">MacOS</a> or <a href="/guide/windows" class="underline">Windows</a> guides!
+## Start building with the <a href="/guide/mac" class="underline">macOS</a> or <a href="/guide/windows" class="underline">Windows</a> guides!

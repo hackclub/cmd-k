@@ -181,7 +181,7 @@
 			onkeydown={handleKeyDown}
 		/>
 	</div>
-	<div class="grow overflow-y-scroll pb-2 text-sm">
+	<div class="no-scrollbar grow overflow-y-scroll pb-2 text-sm">
 		{#each filteredContent as category (category.name)}
 			<div class="px-2" id={`category-${category.name}`}>
 				<p class="p-2 pt-2.5 pb-1.5 text-xs font-medium text-white/50">{category.name}</p>

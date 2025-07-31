@@ -37,3 +37,13 @@ body {
 	--tw-text-shadow: 0 0 5px color-mix(in oklab, var(--color-gray-300) 50%, transparent);
 	text-shadow: var(--tw-text-shadow);
 }
+
+.no-scrollbar::-webkit-scrollbar {
+	display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}

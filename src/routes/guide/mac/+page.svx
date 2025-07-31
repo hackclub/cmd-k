@@ -3,12 +3,12 @@
 </script>
 
 <svelte:head>
-	<title>MacOS guide | cmd + k</title>
+	<title>macOS guide | cmd + k</title>
 	<meta name="description" content="Build a Raycast extension, get Raycast Pro | Hack Club YSWS" />
 </svelte:head>
 
 <h1 class="title">Build a Raycast extension</h1>
-<p class="subtitle">(MacOS edition)</p>
+<p class="subtitle">(macOS edition)</p>
 <Divider />
 
 Extensions allow you to add extra features to Raycast. Let's build your first Raycast extension to check the weather!
