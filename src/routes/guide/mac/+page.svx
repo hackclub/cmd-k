@@ -159,9 +159,29 @@ Raycast has a few awesome examples of how to implement things, you should check 
 
 There are so many other possibilities. Raycast provides a ton of UI elements, and because it's React, you can write your own!
 
-<br />
+## (Optional) Publish your extension to the store!
+<Divider />
+
+First, if you want your extension to support Windows, grab a Windows friend/laptop and test it on there.
+
+Then, this to your `package.json`
+```json
+"platforms": [
+  "macOS",
+  "Windows"
+]
+```
+
 <br />
 
+Raycast makes it super easy to publish, run the following command and follow the instructions:
+```bash
+npm run publish
+```
+
 <Divider />
+
+<br />
+<br />
 
 ### Once you're done, <a href="https://submit.hackclub.com/cmdk" target="_blank" class="underline">submit your extension</a>!
