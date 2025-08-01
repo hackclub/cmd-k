@@ -96,7 +96,7 @@
 		>
 			<Popup {isMac} mainPage={true} />
 			<p class="absolute bottom-4 text-xs text-white/20">
-				cmd + k is not affiliated or endorced by Raycast
+				cmd + k is not affiliated or endorsed by Raycast
 			</p>
 		</div>
 	{/if}
