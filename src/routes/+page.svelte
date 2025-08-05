@@ -53,7 +53,9 @@
 
 <svelte:window on:keydown={handleKeyDown} on:keyup={handleKeyUp} />
 
-<div class="hidden h-screen items-center justify-center bg-rc-dark-1 text-neutral-200 lg:flex">
+<div
+	class="hidden h-screen flex-col items-center justify-center bg-rc-dark-1 text-neutral-200 lg:flex"
+>
 	{#if !activated}
 		<div class="flex items-center text-2xl" transition:blur={{ duration: 300 }}>
 			<div
@@ -73,6 +75,9 @@
 				<p class="text-4xl">K</p>
 			</div>
 		</div>
+		<p class="-mb-8 pt-8 text-sm text-neutral-500" transition:blur={{ duration: 300 }}>
+			Try pressing {isMac ? '⌘' : '⌃'} + k
+		</p>
 	{:else}
 		<div
 			class="pointer-events-none absolute inset-0 overflow-hidden bg-rc-primary/5"
