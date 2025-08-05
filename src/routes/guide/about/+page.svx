@@ -27,8 +27,12 @@ cmd + k is a limited time You Ship, We Ship program! (available for both macOS a
 <p class="text-center font-bold py-2">cmd + k ends <span title="August 17, 11:59pm EDT">{localDeadline}</span></p>
 
 ![intro to cmd +k](/cmd-k.png)
+![stickers](/guide/stickers.jpg)
 
-You'll spend 3+ hours building an extension for Raycast (tracked with <a href="https://hackatime.hackclub.com" target="_blank">Hackatime</a>), and we'll get you <a href="https://www.raycast.com/pro" target="_blank">Raycast Pro</a> and Hack Club Raycast stickers :D
+<br />
+
+For every 3 hours building an extension for Raycast (tracked with <a href="https://hackatime.hackclub.com" target="_blank">Hackatime</a>), and we'll get you a month of <a href="https://www.raycast.com/pro" target="_blank">Raycast Pro</a>. You'll also get Hack Club Raycast stickers in the mail! :D
+You can get many months of Raycast Pro!
 
 (pro tip: you can use the cmd/ctrl + k shortcut on any page)
 
